@@ -1,0 +1,19 @@
+pip install beautiful soup
+pip install request
+pip install html5lib
+
+#Import Request
+#import from bs
+url="https//:www.amazon.com"
+bhush=request.get(url)
+htmlcontent=bhush.content   #if we want code in html
+print(htmlcontent)           #baesd on need to print content
+Soup=Beautifulsoup(htmlcontent,'html.parser')
+print(soup)                                          #soup is pretify
+title=soup.title
+print=(type(title))                      #we get class after execution
+#to get paragraph in code
+par=soup.find_all('p')
+print(par)
+class element in html:
+    print(soup.find('p')['class'])              #if we want id
